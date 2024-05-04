@@ -78,7 +78,7 @@ func main() {
 func initializeRedis(ctx context.Context) (*redis.Client, error) {
 	//bad practice to hardcode the connection details but it is just a small demo script!
 	client := redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
+		Addr:     "redis:6379",
 		Password: "",
 		DB:       0,
 	})
